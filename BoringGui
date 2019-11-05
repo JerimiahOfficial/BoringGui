@@ -1,3 +1,9 @@
+/*
+
+
+
+*/
+
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -6,11 +12,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CustomGui
+namespace BoringGui
 {
-    public class guiButton : Button
+    public class BButton : Button
     {
-        public guiButton()
+        public BButton()
         {
             FlatAppearance.BorderSize = 0;
             FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -27,5 +33,10 @@ namespace CustomGui
             e.Graphics.DrawRectangle(pen, rectangle);
             e.Graphics.DrawRectangle(new Pen(this.BackColor, 5), this.ClientRectangle);
         }
+    }
+    
+    public class BSlider : TrackBar
+    {
+        
     }
 }
