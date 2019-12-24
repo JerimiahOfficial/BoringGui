@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace BoringGui
 {
-    public class BButton : Button
+    public class B_Button : Button
     {
-        public BButton()
+        public B_Button()
         {
             FlatAppearance.BorderSize = 0;
             FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -31,6 +31,24 @@ namespace BoringGui
             Rectangle rectangle = new Rectangle(0, 0, Size.Width - 1, Size.Height - 1);
             e.Graphics.DrawRectangle(pen, rectangle);
             e.Graphics.DrawRectangle(new Pen(this.BackColor, 5), this.ClientRectangle);
+        }
+    }
+    
+    public class B_RoundButton : Button
+    {
+        public B_RoundButton()
+        {
+            FlatAppearance.BorderSize = 0;
+            FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            TabStop = false;
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+            GraphicsPath gp = new GraphicsPath();
+            gp.AddEllipse(0, 0, ClientSize.Width, ClientSize.Height);
+            this.Region = new System.Drawing.Region(gp);
         }
     }
     
