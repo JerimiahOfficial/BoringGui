@@ -34,9 +34,9 @@ namespace BoringGui
         }
     }
     
-    public class B_RoundButton : Button
+    public class B_CircleButton : Button
     {
-        public B_RoundButton()
+        public B_CircleButton()
         {
             FlatAppearance.BorderSize = 0;
             FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -52,7 +52,7 @@ namespace BoringGui
         }
     }
     
-    public class BSlider : TrackBar
+    public class B_Slider : TrackBar
     {
         
     }
