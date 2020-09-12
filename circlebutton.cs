@@ -7,7 +7,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
-namespace MilkyUi
+namespace BoringGui
 {
     public class circlebutton : Button
     {
