@@ -11,4 +11,4 @@ Draws a button.
 Draws a button using an elipse.
 
 # RoundedPanel.cs
-Draws a panel with set user adjustable diameters. 
+Draws a panel with set user adjustable diameters for corners of the panel. 
